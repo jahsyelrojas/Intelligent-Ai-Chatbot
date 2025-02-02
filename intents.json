@@ -1,0 +1,267 @@
+{"intents": [
+
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hello", "Hey", "Howdy", "Hola", "Greetings", "Good morning", "Good evening"],
+     "responses": ["Hi there!", "Hello! How can I assist you?", "Hey! Nice to see you here!", "Greetings! How can I help?"],
+     "context_set": ""
+    },
+    
+    {"tag": "goodbye",
+     "patterns": ["Bye", "Goodbye", "See you later", "Cya", "Catch you later", "Farewell"],
+     "responses": ["Goodbye! Have a great day!", "See you soon!", "Take care!", "Farewell, talk to you later!"],
+     "context_set": ""
+    },
+    
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "Much appreciated", "Thanks a lot", "Many thanks", "Thanks for your help"],
+     "responses": ["You're welcome!", "No problem at all!", "Happy to help!", "Anytime!"],
+     "context_set": ""
+    },
+    
+    {"tag": "how",
+     "patterns": ["How are you?", "How is your day?", "How do you feel?", "What's up?", "You good?"],
+     "responses": ["I'm doing great, thanks for asking!", "I feel fantastic, thank you!", "I'm just a bot, but I'm doing great!"],
+     "context_set": ""
+    },
+    
+    {"tag": "name",
+     "patterns": ["What's your name?", "Who are you?", "What can I call you?", "Do you have a name?"],
+     "responses": ["I'm Dan, your friendly assistant!", "Call me Dan!", "I'm Dan, nice to meet you!"],
+     "context_set": ""
+    },
+    
+    {"tag": "age",
+     "patterns": ["How old are you?", "What's your age?", "Are you old?", "What's your birthday?"],
+     "responses": ["I'm ageless!", "I was created not too long ago.", "Age doesn't apply to me!"],
+     "context_set": ""
+    },
+    
+    {"tag": "weather",
+     "patterns": ["What's the weather like?", "Tell me the weather", "Is it raining?", "Weather forecast", "How's the weather?"],
+     "responses": ["I can look up the weather for you. Can you tell me your location?", "Sure! Where are you located to get the forecast?"],
+     "context_set": ""
+    },
+    
+    {"tag": "jokes",
+     "patterns": ["Tell me a joke", "Make me laugh", "Do you know any jokes?", "Say something funny"],
+     "responses": ["Why don’t scientists trust atoms? Because they make up everything!", "What do you get if you cross a snowman and a vampire? Frostbite.", "I would tell you a construction joke, but I’m still working on it!"],
+     "context_set": ""
+    },
+    
+    {"tag": "facts",
+     "patterns": ["Tell me a fact", "Share an interesting fact", "Do you know any cool facts?", "What's a fun fact?"],
+     "responses": ["Did you know honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old!", "Octopuses have three hearts, and two of them stop beating when they swim.", "Bananas are berries, but strawberries aren't!"],
+     "context_set": ""
+    },
+    
+    {"tag": "programming",
+     "patterns": ["What is programming?", "What is coding?", "Tell me about programming", "Explain coding", "What does a programmer do?"],
+     "responses": ["Programming is the process of creating and implementing instructions for computers to perform specific tasks.", "Coding is writing commands that a computer can understand to perform certain actions."],
+     "context_set": ""
+    },
+    
+    {"tag": "math",
+     "patterns": ["Solve this math problem", "Can you calculate?", "Do you know math?", "What's 5 + 3?", "Calculate 100 times 2"],
+     "responses": ["Sure, what's the math problem?", "I can calculate that! Ask me any math question."],
+     "context_set": ""
+    },
+    
+    {"tag": "stock_market",
+     "patterns": ["How's the stock market?", "What's the price of Apple stock?", "Can you track stocks?", "Tell me about the market"],
+     "responses": ["Sure, let me pull up stock data for you. Please provide a stock name or ticker symbol.", "What stock are you interested in? I can fetch the details!"],
+     "context_set": ""
+    },
+    
+    {"tag": "movies",
+     "patterns": ["Recommend a movie", "What movies are trending?", "What's a good movie to watch?", "Any good movies?"],
+     "responses": ["Sure, I can recommend some! Are you looking for action, comedy, or drama?", "I love recommending movies! What genre are you interested in?"],
+     "context_set": ""
+    },
+    
+    {"tag": "health",
+     "patterns": ["How to stay healthy?", "Tips for a healthy lifestyle", "Give me some health advice"],
+     "responses": ["Exercise regularly, eat balanced meals, drink plenty of water, and get enough sleep!", "Stay healthy by staying active, eating nutritious food, and keeping a positive mindset!"],
+     "context_set": ""
+    },
+    
+    {"tag": "hobbies",
+     "patterns": ["What hobbies should I try?", "Suggest a new hobby", "What are some fun hobbies?"],
+     "responses": ["How about learning a musical instrument, trying out painting, or picking up a new sport?", "You could try cooking, gardening, or even coding as a hobby!"],
+     "context_set": ""
+    },
+
+    {
+        "tag": "help",
+        "patterns": ["Can you help me?", "I need assistance", "What can you do for me?", "Help!", "Assist me"],
+        "responses": ["Sure, I'm here to help! What do you need assistance with?", "How can I assist you today?", "Of course! Let me know how I can help."],
+        "context_set": ""
+      },
+      {
+        "tag": "weather",
+        "patterns": ["What's the weather like?", "Tell me the weather", "Is it sunny today?", "Weather update"],
+        "responses": ["Please provide the city name to check the weather.", "Sure, which location should I check the weather for?"],
+        "context_set": "weather_query"
+      },
+      {
+        "tag": "weather_query",
+        "patterns": ["[city name] weather", "Weather in [city]", "Forecast for [city]"],
+        "responses": ["Fetching the weather for {city}. Please wait!", "Here's the weather for {city}: Sunny, 25°C (example response)."],
+        "context_set": ""
+      },
+      {
+        "tag": "jokes",
+        "patterns": ["Tell me a joke", "Make me laugh", "Do you know any jokes?", "Say something funny"],
+        "responses": ["Why don’t skeletons fight each other? They don’t have the guts!", "I told my computer I needed a break, and now it won’t stop sending me KitKats.", "What do you call fake spaghetti? An impasta!"],
+        "context_set": ""
+      },
+      {
+        "tag": "news",
+        "patterns": ["What's the news today?", "Any updates on current events?", "Tell me the latest news"],
+        "responses": ["You can check out the latest news at your favorite news outlet. What category are you looking for?", "Sure, let me gather some top headlines for you."],
+        "context_set": ""
+      },
+      {
+        "tag": "time",
+        "patterns": ["What's the time?", "Can you tell me the time?", "What time is it?", "Current time please"],
+        "responses": ["It's currently [time].", "The time is [time] right now."],
+        "context_set": ""
+      },
+      {
+        "tag": "date",
+        "patterns": ["What's the date today?", "Tell me today's date", "What day is it?"],
+        "responses": ["Today's date is [date].", "It's [day], [date]."],
+        "context_set": ""
+      },
+      {
+        "tag": "math",
+        "patterns": ["Solve 2+2", "Can you do math?", "Calculate 15*3", "What's 100 divided by 4?"],
+        "responses": ["The answer is [calculation].", "Let me calculate that for you: [calculation]."],
+        "context_set": ""
+      },
+      {
+        "tag": "food",
+        "patterns": ["I'm hungry", "What's a good place to eat?", "Suggest a restaurant", "Where should I eat?"],
+        "responses": ["What type of food are you craving?", "Let me recommend a place nearby! Please share your location."],
+        "context_set": ""
+      },
+      {
+        "tag": "motivation",
+        "patterns": ["I need motivation", "Give me some inspiration", "Motivate me", "I'm feeling down"],
+        "responses": ["You are capable of amazing things! Keep going!", "Every day is a chance to make progress. You've got this!", "Remember, tough times don’t last, but tough people do."],
+        "context_set": ""
+      },
+      {
+        "tag": "sports",
+        "patterns": ["What's the latest sports news?", "Who won the game last night?", "Tell me about sports updates"],
+        "responses": ["Sure, which sport are you interested in?", "I can help you find updates on football, basketball, or any sport you like!"],
+        "context_set": ""
+      },
+      {
+        "tag": "movies",
+        "patterns": ["Recommend me a movie", "What's a good movie to watch?", "Any movie suggestions?"],
+        "responses": ["What genre do you like? Action, comedy, drama, or something else?", "How about 'Inception'? It’s a classic!"],
+        "context_set": ""
+      },
+      {
+        "tag": "hobbies",
+        "patterns": ["Suggest a new hobby", "What hobbies should I try?", "I want to try something new"],
+        "responses": ["How about learning to play an instrument, painting, or hiking?", "You could try gardening, photography, or even coding!"],
+        "context_set": ""
+      },
+      {
+        "tag": "travel",
+        "patterns": ["Where should I travel?", "Suggest a travel destination", "Best vacation spots?"],
+        "responses": ["Are you looking for beaches, mountains, or a city adventure?", "How about Bali for a tropical getaway or Paris for a cultural experience?"],
+        "context_set": ""
+      },
+      {
+        "tag": "pets",
+        "patterns": ["Tell me about pets", "What pet should I get?", "How to take care of pets?"],
+        "responses": ["Dogs are loyal companions, cats are independent, and fish are low maintenance. What are you looking for?", "Pets need love, care, and attention. Choose one that fits your lifestyle!"],
+        "context_set": ""
+      },
+      {
+        "tag": "books",
+        "patterns": ["Suggest a book", "What's a good book to read?", "Any book recommendations?"],
+        "responses": ["Try 'The Alchemist' by Paulo Coelho or 'Atomic Habits' by James Clear!", "What genre are you interested in? Fiction, self-help, or biographies?"],
+        "context_set": ""
+      },
+      {
+        "tag": "technology",
+        "patterns": ["Tell me about technology", "What's the latest tech news?", "Explain new tech trends"],
+        "responses": ["Technology is constantly evolving. Are you interested in AI, blockchain, or other tech topics?", "I can share updates on gadgets, apps, and tech innovations!"],
+        "context_set": ""
+      },
+      {
+        "tag": "music",
+        "patterns": ["Recommend me a song", "What music should I listen to?", "Suggest a music genre"],
+        "responses": ["What type of music do you enjoy? Pop, rock, classical, or something else?", "How about 'Shape of You' by Ed Sheeran or 'Bohemian Rhapsody' by Queen?"],
+        "context_set": ""
+      },
+      {
+        "tag": "education",
+        "patterns": ["Tell me about education", "How to study effectively?", "Learning tips"],
+        "responses": ["Stay organized, take breaks, and practice active learning for effective studying!", "Continuous learning is key to personal growth. What subjects interest you?"],
+        "context_set": ""
+      },
+      {
+        "tag": "science",
+        "patterns": ["Tell me about science", "Explain a scientific concept", "Science facts"],
+        "responses": ["Science is fascinating! What topic are you curious about? Space, biology, or physics?", "Did you know that the Earth's core is as hot as the sun's surface? Science is full of amazing facts!"],
+        "context_set": ""
+      },
+      {
+        "tag": "art",
+        "patterns": ["Tell me about art", "Artistic inspiration", "Art styles"],
+        "responses": ["Art comes in many forms: painting, sculpture, music, and more. What art style interests you?", "Art is a beautiful expression of creativity. Do you enjoy classic art, modern art, or street art?"],
+        "context_set": ""
+      },
+      {
+        "tag": "politics",
+        "patterns": ["What's happening in politics?", "Political news updates", "Tell me about current affairs"],
+        "responses": ["Politics can be complex. Are you interested in global politics, local news, or specific issues?", "Stay informed about political events and policies that impact society."],
+        "context_set": ""
+      },
+      {
+        "tag": "history",
+        "patterns": ["Tell me about history", "Historical facts", "Explain a historical event"],
+        "responses": ["History is full of stories. What era or event are you curious about?", "Learning history helps us understand the past and shape the future. What historical topic interests you?"],
+        "context_set": ""
+      },
+      {
+        "tag": "food",
+        "patterns": ["What's your favorite food?", "Tell me about food", "Food recommendations"],
+        "responses": ["I enjoy all kinds of food! What's your favorite cuisine?", "Food brings people together. Do you like Italian, Chinese, or Mexican cuisine?"],
+        "context_set": ""
+      },
+      {
+        "tag": "gaming",
+        "patterns": ["Tell me about gaming", "Gaming news updates", "Game recommendations"],
+        "responses": ["Gaming is a popular hobby. What genre of games do you enjoy?", "I can recommend fun games to play! Are you into action, adventure, or strategy games?"],
+        "context_set": ""
+      },
+      {
+        "tag": "social_media",
+        "patterns": ["Tell me about social media", "Social media trends", "How to use social platforms"],
+        "responses": ["Social media connects people worldwide. Are you interested in Facebook, Instagram, or Twitter?", "Stay updated on social media trends and best practices for online engagement."],
+        "context_set": ""
+      },
+      {
+        "tag": "travel",
+        "patterns": ["Tell me about travel", "Travel tips", "Best travel destinations"],
+        "responses": ["Travel broadens the mind. What type of travel experience are you looking for?", "Explore new cultures, cuisines, and adventures through travel! Where would you like to go?"],
+        "context_set": ""
+      },
+      {
+        "tag": "fashion",
+        "patterns": ["Tell me about fashion", "Fashion trends", "Style tips"],
+        "responses": ["Fashion is a form of self-expression. What's your personal style?", "Stay stylish with the latest fashion trends and tips for dressing up!"],
+        "context_set": ""
+      },
+      {
+        "tag": "fitness",
+        "patterns": ["Tell me about fitness", "Fitness tips", "Workout recommendations"],
+        "responses": ["Fitness is essential for a healthy lifestyle. What type of workout do you enjoy?", "Stay active, eat well, and exercise regularly for a fit and healthy life!"]
+      }
+]}
+    
